@@ -525,3 +525,23 @@ variable "use_non_priviledged_ports" {
   description = "Use non privileged ports for the container"
   default     = false
 }
+
+variable "proxy_protocol_enable" {
+  description = "Enable Proxy Protocol"
+  default     = false
+}
+
+variable "proxy_protocl_trusted_ips" {
+  description = "List of IP Addresses and CIDRs to trust for Proxy Protocol"
+  default     = []
+}
+
+variable "forwarded_headers_enable" {
+  description = "Enable trusting forwarded headers"
+  default     = false
+}
+
+variable "forwarded_headers_trusted_ips" {
+  description = "List of IP Addresses and CIDRs to trust for Forwarded Headers"
+  default     = []
+}

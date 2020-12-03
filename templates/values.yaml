@@ -62,14 +62,14 @@ kubernetes:
     useDefaultPublishedService: true
 
 proxyProtocol:
-  enabled: false
+  enabled: ${proxy_protocol_enable}
   # trustedIPs is required when enabled
-  trustedIPs: []
+  trustedIPs: ${proxy_protocl_trusted_ips}
   # - 10.0.0.0/8
 forwardedHeaders:
-  enabled: false
+  enabled: ${forwarded_headers_enable}
   # trustedIPs is required when enabled
-  trustedIPs: []
+  trustedIPs: ${forwarded_headers_trusted_ips}
   # - 10.0.0.0/8
 
 ## Add arbitrary ConfigMaps to deployment
