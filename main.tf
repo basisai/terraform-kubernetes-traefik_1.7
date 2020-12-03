@@ -155,5 +155,11 @@ locals {
     extra_volume_mounts = jsonencode(var.extra_volume_mounts)
 
     autoscaling = var.autoscaling_enable ? jsonencode(local.autoscaling) : "null"
+
+    proxy_protocol_enable     = var.proxy_protocol_enable
+    proxy_protocl_trusted_ips = jsonencode(var.proxy_protocl_trusted_ips)
+
+    forwarded_headers_enable      = var.forwarded_headers_enable
+    forwarded_headers_trusted_ips = jsonencode(var.forwarded_headers_trusted_ips)
   }
 }
