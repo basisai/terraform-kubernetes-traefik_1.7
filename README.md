@@ -4,7 +4,7 @@ This module provisions the deprecated Traefik 1.7 on Kubernetes using the no lon
 stable chart.
 
 The module is published on
-[Terraform Registry](https://registry.terraform.io/modules/basisai/traefik_1.7/kubernetes/latest).
+[Terraform Registry](https://registry.terraform.io/modules/basisai/traefik_1_7/kubernetes/latest).
 
 Deploys a [Traefik](https://traefik.io/)
 [Ingress Controller](https://docs.traefik.io/user-guide/kubernetes/) on a Kubernetes cluster.
