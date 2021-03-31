@@ -87,6 +87,7 @@ locals {
     ssl_enabled            = var.ssl_enabled
     ssl_enforced           = var.ssl_enforced
     ssl_permanent_redirect = var.ssl_permanent_redirect
+    ssl_upstream           = var.ssl_upstream
     ssl_min_version        = var.ssl_min_version
     ssl_ciphersuites       = jsonencode(var.ssl_ciphersuites)
 
