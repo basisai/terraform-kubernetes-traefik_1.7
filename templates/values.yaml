@@ -91,6 +91,7 @@ ssl:
   enabled: ${ssl_enabled}
   enforced: ${ssl_enforced}
   permanentRedirect: ${ssl_permanent_redirect}
+  upstream: ${ssl_upstream}
   tlsMinVersion: "${ssl_min_version}"
   cipherSuites: ${ssl_ciphersuites}
 

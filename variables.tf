@@ -229,6 +229,11 @@ variable "ssl_permanent_redirect" {
   default     = "true"
 }
 
+variable "ssl_upstream" {
+  description = "Whether to skip configuring certs (ie: SSL is terminated by L4 ELB)"
+  default     = "false"
+}
+
 variable "ssl_min_version" {
   description = "Minimum version of SSL to use. See https://docs.traefik.io/configuration/entrypoints/#specify-minimum-tls-version"
   default     = "VersionTLS12"
