@@ -90,6 +90,7 @@ locals {
     ssl_upstream           = var.ssl_upstream
     ssl_min_version        = var.ssl_min_version
     ssl_ciphersuites       = jsonencode(var.ssl_ciphersuites)
+    ssl_extra_certs        = jsonencode(var.ssl_extra_certs)
 
     acme_enabled         = var.acme_enabled
     acme_key_type        = var.acme_key_type
