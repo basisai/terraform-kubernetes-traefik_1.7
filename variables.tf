@@ -244,6 +244,12 @@ variable "ssl_ciphersuites" {
   default     = []
 }
 
+variable "ssl_extra_certs" {
+  description = "List of any extra certificate/key filenames you want included in the traefik instance. Should be used in conjunction with `secretFiles` or `extraVolumes` & `extraVolumeMounts` paramaters"
+  type        = list(object({ certFile = string, keyFile = string }))
+  default     = []
+}
+
 variable "acme_enabled" {
   description = "Enable ACME protocol (Let's Encrypt)"
   default     = "false"
